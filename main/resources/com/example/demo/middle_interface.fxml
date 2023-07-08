@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MiddleInterface">
+   <children>
+      <ImageView fx:id="middle_inter" fitHeight="895.0" fitWidth="921.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/s1.jpg" />
+         </image>
+         <effect>
+            <BoxBlur height="14.0" width="17.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="281.0" fitWidth="266.0" layoutX="337.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/reptile.png" />
+         </image>
+         <effect>
+            <DropShadow height="108.93" radius="51.035" spread="0.39" width="97.21">
+               <color>
+                  <Color red="0.06524122506380081" green="0.025584794580936432" blue="0.18421052396297455" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="145.0" layoutX="560.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/friend.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="44.45" radius="20.26" width="38.59" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="158.0" layoutX="197.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/oniline.png" />
+         </image>
+         <effect>
+            <DropShadow height="47.38" radius="19.525" spread="0.17" width="32.72">
+               <color>
+                  <Color red="0.09978070110082626" green="0.2582785189151764" blue="0.5526315569877625" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Button fx:id="play_online" layoutX="185.0" layoutY="526.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="181.0" text="Play Onilne">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="0.0" surfaceScale="3.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="play_friend" layoutX="542.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#play_friend_hello" prefHeight="56.0" prefWidth="181.0" text="Play with Friend">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="20.46" surfaceScale="3.22">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="132.0" fitWidth="145.0" layoutX="14.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/gift_11.gif" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.38" fraction="0.57" topOpacity="0.33">
+               <input>
+                  <DropShadow height="9.15" radius="10.6975" spread="0.29" width="35.64">
+                     <color>
+                        <Color red="0.06578947603702545" green="0.035585202276706696" blue="0.014010720886290073" />
+                     </color>
+                  </DropShadow>
+               </input>
+            </Reflection>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="205.0" layoutX="716.0" layoutY="657.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/wheel.gif" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.19" fraction="0.48" topOpacity="0.54">
+               <input>
+                  <DropShadow height="0.0" radius="4.63" spread="0.65" width="20.52">
+                     <color>
+                        <Color red="0.9210526347160339" green="0.8599333763122559" blue="0.004264132585376501" />
+                     </color>
+                  </DropShadow>
+               </input>
+            </Reflection>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="middle_exit" fitHeight="103.0" fitWidth="101.0" layoutX="3.0" layoutY="92.0" onMouseClicked="#middle_exit_start" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="110.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/setting_11.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

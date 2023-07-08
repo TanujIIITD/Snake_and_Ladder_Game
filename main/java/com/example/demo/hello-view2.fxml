@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="board" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="1309.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController2">
+    <children>
+        <ImageView fitHeight="894.0" fitWidth="950.0" layoutX="3.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@snakes_and_ladders1.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="Player1com" disable="true" layoutX="1040.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#Roll1com" prefHeight="67.0" prefWidth="132.0" text="Player1" textFill="#c30a1f">
+            <font>
+                <Font name="Algerian" size="22.0" />
+            </font>
+            <effect>
+                <Lighting diffuseConstant="1.16" specularConstant="1.04" specularExponent="11.26" surfaceScale="8.17">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect></Button>
+        <Button fx:id="Player2com" disable="true" layoutX="1040.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#Roll2com" prefHeight="67.0" prefWidth="132.0" text="Player2" textFill="#9e8f20">
+            <font>
+                <Font name="Algerian" size="22.0" />
+            </font>
+            <effect>
+                <Lighting diffuseConstant="1.67" specularConstant="0.71" specularExponent="21.38" surfaceScale="10.0">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant>
+                            <color>
+                                <Color red="0.6772417426109314" green="0.6842105388641357" blue="0.6493664979934692" />
+                            </color>
+                        </Light.Distant>
+                    </light>
+                </Lighting>
+            </effect></Button>
+        <Button fx:id="Start_Gamecom" layoutX="1000.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#game_startedcom" prefHeight="55.0" prefWidth="228.0" text="Start Game" textFill="#5009dd">
+            <font>
+                <Font name="Bauhaus 93" size="28.0" />
+            </font>
+            <effect>
+                <Lighting surfaceScale="4.83">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant>
+                            <color>
+                                <Color red="1.0" green="0.7853333353996277" blue="0.4399999976158142" />
+                            </color>
+                        </Light.Distant>
+                    </light>
+                </Lighting>
+            </effect></Button>
+        <ImageView fx:id="roller" cache="true" disable="true" fitHeight="140.0" fitWidth="200.0" layoutX="1044.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@dice-roll.gif" />
+            </image>
+            <effect>
+                <Reflection fraction="0.62" topOpacity="0.44" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="token_1com" fitHeight="55.0" fitWidth="35.0" layoutX="13.0" layoutY="740.0" onMouseClicked="#move_token1com" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@red_3.png" />
+            </image>
+            <effect>
+                <Lighting diffuseConstant="1.25" specularConstant="1.96" specularExponent="40.0" surfaceScale="10.0">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="token_2com" fitHeight="55.0" fitWidth="38.0" layoutX="13.0" layoutY="795.0" onMouseClicked="#move_token2com" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@yellow_3.png" />
+            </image>
+            <effect>
+                <Lighting diffuseConstant="1.41" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant>
+                            <color>
+                                <Color red="1.0" green="0.9999228119850159" blue="0.9953703880310059" />
+                            </color>
+                        </Light.Distant>
+                    </light>
+                </Lighting>
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="242.0" fitWidth="494.0" layoutX="214.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="124.0" fitWidth="415.0" layoutX="914.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@snake.gif" />
+            </image>
+            <effect>
+                <Bloom threshold="0.82" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="exitcom" fitHeight="74.0" fitWidth="156.0" layoutX="1036.0" layoutY="786.0" onMouseClicked="#exit_buttoncom" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@exit1.png" />
+            </image>
+            <effect>
+                <DropShadow height="38.59" radius="18.060000000000002" spread="0.17" width="35.65" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="image1" disable="true" fitHeight="324.0" fitWidth="652.0" layoutX="214.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image2" disable="true" fitHeight="324.0" fitWidth="652.0" layoutX="220.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+    <effect>
+        <InnerShadow choke="0.21" height="73.76" radius="29.785000000000004" width="47.38" />
+    </effect>
+</Pane>

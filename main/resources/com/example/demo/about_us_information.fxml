@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="board_about" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AboutUsInformation">
+   <children>
+      <Label layoutX="274.0" layoutY="32.0" prefHeight="102.0" prefWidth="363.0" text="About us">
+         <font>
+            <Font name="Bauhaus 93" size="90.0" />
+         </font>
+         <effect>
+            <DropShadow height="18.07" radius="10.7325" spread="0.57" width="26.86">
+               <color>
+                  <Color red="0.21875" green="0.6458881497383118" blue="0.8289473652839661" />
+               </color>
+               <input>
+                  <Reflection bottomOpacity="0.05" fraction="0.62" topOpacity="0.39" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="274.0" layoutY="384.0" prefHeight="87.0" prefWidth="363.0" text="Purpose of the Game" textOverrun="CENTER_ELLIPSIS" underline="true">
+         <font>
+            <Font name="Broadway" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="471.0" prefHeight="63.0" prefWidth="853.0" text="The Snake and Ladder game has been enjoyed by people of all ages.">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="522.0" prefHeight="63.0" prefWidth="861.0" text="It combines luck, strategy, and a sense of adventure as players race to win.">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="565.0" prefHeight="87.0" prefWidth="861.0" text="This game aims to provide hours of entertainment for players.">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="281.0" prefHeight="87.0" prefWidth="804.0" text="Welcome to the Snake and Ladder Game!">
+         <font>
+            <Font name="Snap ITC" size="42.0" />
+         </font>
+         <effect>
+            <DropShadow height="26.86" radius="15.86" spread="0.74" width="38.58">
+               <color>
+                  <Color red="0.6006578803062439" green="0.5394737124443054" blue="0.9473684430122375" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="yash" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#about_exit_start" prefHeight="38.0" prefWidth="161.0" text="BACK">
+         <font>
+            <Font name="Bauhaus 93" size="39.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.25" specularExponent="27.82" surfaceScale="4.49">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <SepiaTone level="0.53">
+         <input>
+            <InnerShadow choke="0.41" height="82.55" radius="54.697500000000005" width="138.24" />
+         </input>
+      </SepiaTone>
+   </effect>
+</Pane>

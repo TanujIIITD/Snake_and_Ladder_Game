@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="back_inter" fitHeight="895.0" fitWidth="906.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@s1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fornt_inter" fitHeight="333.0" fitWidth="829.0" layoutX="39.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@interface.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="120.65" radius="56.8975" spread="0.4" width="108.94" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="front_but" fitHeight="190.0" fitWidth="218.0" layoutX="363.0" layoutY="531.0" onMouseClicked="#front_but_start" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@playbutton.gif" />
+         </image>
+         <effect>
+            <DropShadow height="88.41" radius="42.239999999999995" spread="0.48" width="82.55" />
+         </effect>
+      </ImageView>
+      <Button fx:id="front_about" layoutX="666.0" layoutY="800.0" mnemonicParsing="false" onMouseClicked="#front_about_view" prefHeight="66.0" prefWidth="216.0" text="About Us">
+         <font>
+            <Font name="Bauhaus 93" size="40.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.11" specularConstant="0.39" specularExponent="20.46" surfaceScale="4.72">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</Pane>

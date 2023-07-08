@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StartInterface">
+   <children>
+      <ImageView fx:id="back_inter" fitHeight="895.0" fitWidth="906.0" layoutY="-6.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@s1.jpg" />
+         </image>
+         <effect>
+            <BoxBlur height="14.0" width="20.0">
+               <input>
+                  <InnerShadow choke="0.5" height="252.31" radius="126.3275" width="255.0" />
+               </input>
+            </BoxBlur>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="fornt_inter" fitHeight="285.0" fitWidth="637.0" layoutX="135.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@interface.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="144.11" radius="68.625" spread="0.5" width="132.39" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="134.0" layoutX="602.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@playbutton.gif" />
+         </image>
+         <effect>
+            <DropShadow height="88.41" radius="42.239999999999995" spread="0.48" width="82.55" />
+         </effect>
+      </ImageView>
+      <Button fx:id="front_about" layoutX="352.0" layoutY="715.0" mnemonicParsing="false" onMouseClicked="#front_about_view" prefHeight="94.0" prefWidth="239.0" text="About Us">
+         <font>
+            <Font name="Bauhaus 93" size="40.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.11" specularConstant="0.18" specularExponent="20.92" surfaceScale="6.21">
+               <bumpInput>
+                  <Shadow height="15.14" radius="8.535" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="128.0" fitWidth="137.0" layoutX="21.0" layoutY="659.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gift_11.gif" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.13" fraction="0.67">
+               <input>
+                  <DropShadow height="12.21" radius="12.1975" spread="0.36" width="38.58" />
+               </input>
+            </Reflection>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="181.0" layoutX="731.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@wheel.gif" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.08" fraction="0.54" topOpacity="0.39">
+               <input>
+                  <DropShadow height="8.79" radius="6.095" spread="0.28" width="17.59" />
+               </input>
+            </Reflection>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="74.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@setting_11.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="63.5" radius="34.5475" spread="0.32" width="76.69" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="87.0" layoutX="2.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@volume.png" />
+         </image>
+         <effect>
+            <DropShadow height="82.55" radius="39.31" spread="0.27" width="76.69" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Cross" fitHeight="94.0" fitWidth="81.0" layoutX="817.0" layoutY="5.0" onMouseClicked="#Cross_close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@free-quit-icon-exit-icon-11553464030pmp2v0tbaj.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.32" specularConstant="0.51" specularExponent="25.06" surfaceScale="6.79">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="181.0" layoutX="190.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@computer.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="play_com" layoutX="139.0" layoutY="539.0" mnemonicParsing="false" onMouseClicked="#play_with_computer" prefHeight="74.0" prefWidth="273.0" text="Play with computer">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.11" specularConstant="0.18" specularExponent="20.92" surfaceScale="6.21">
+               <bumpInput>
+                  <Shadow height="15.14" radius="8.535" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="plya_fri" layoutX="533.0" layoutY="539.0" mnemonicParsing="false" onMouseClicked="#play_with_friend" prefHeight="74.0" prefWidth="273.0" text="Play with Friend">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.11" specularConstant="0.18" specularExponent="20.92" surfaceScale="6.21">
+               <bumpInput>
+                  <Shadow height="15.14" radius="8.535" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</Pane>

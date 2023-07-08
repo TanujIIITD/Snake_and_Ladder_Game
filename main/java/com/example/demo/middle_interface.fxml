@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="board_middle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MiddleInterface">
+   <children>
+      <Button fx:id="play_online" layoutX="185.0" layoutY="526.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="181.0" text="Play Onilne">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="0.0" surfaceScale="3.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="play_friend" layoutX="542.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#play_friend_hello" prefHeight="56.0" prefWidth="181.0" text="Play with Friend">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="20.46" surfaceScale="3.22">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="85.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/com/example/demo/hjhjhjhj.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
